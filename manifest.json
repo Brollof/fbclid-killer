@@ -1,0 +1,16 @@
+{
+  "name": "fbclid killer",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Automatically removes annoying fbclid parameter from the opened urls.",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}
