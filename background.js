@@ -4,9 +4,9 @@ chrome.webRequest.onBeforeRequest.addListener(
   function(info) {
     let match = info.url.match(/(.*)[&\?]fbclid=/);
     if (match) {
-      return {redirectUrl: match[1]};
+      return { redirectUrl: match[1] };
     }
   },
-  { urls: ["<all_urls>"]},
+  { urls: ["<all_urls>"] },
   ["blocking"]
 );
